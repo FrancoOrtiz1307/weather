@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del Clima</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputBox">
+            <input type="text" id="locacion" placeholder="Ingrese la ciudad">
+            <button id="btn-buscar"><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+        <div class="container-clima">
+            <img id="icono-clima" src="" alt="">
+            <h2 id="temperatura"></h2>
+            <p id="descripcion"></p>
+        </div>
+        
+        <div class="pronostico">
+            <h3>Próximos días</h3>
+            <div class="dias-pronostico" id="dias-pronostico">
+                <!-- Ejemplo de cómo se verían los días (esto se generará desde JS) -->
+                <div class="dia-item">
+                    <div class="fecha">Mar 19</div>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="Parcialmente nublado">
+                    <div class="temp">24°C</div>
+                    <div class="desc">Parcialmente nublado</div>
+                </div>
+                <div class="dia-item">
+                    <div class="fecha">Mié 20</div>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="Soleado">
+                    <div class="temp">26°C</div>
+                    <div class="desc">Soleado</div>
+                </div>
+                <div class="dia-item">
+                    <div class="fecha">Jue 21</div>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/176.png" alt="Lluvia débil">
+                    <div class="temp">22°C</div>
+                    <div class="desc">Lluvia débil</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
